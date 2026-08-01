@@ -49,7 +49,7 @@ export default function Footer() {
               <span className="heading-serif text-2xl text-amber-warm">Agro</span>
             </Link>
             <p className="text-white/60 leading-relaxed text-sm">
-              Bringing the freshest blooms and most beautiful floral decorations from our farms to your special moments.
+              Elevating luxury hotel interiors and eco-tourism experiences with sustainable botanical styling and farm-fresh floral artistry.
             </p>
             <div className="flex space-x-4 pt-2">
               <MagneticIcon icon={Facebook} href="https://facebook.com" />
@@ -80,11 +80,11 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-3">
               {[
-                'Fresh Cut Flowers', 
-                'Wedding Decor', 
-                'Event Styling', 
-                'Wholesale Supply', 
-                'Corporate Flowers'
+                'Hotel Interior Decor', 
+                'Eco Tourism Agriculture', 
+                'Resort Botanical Styling', 
+                'Farm Tours & Experiences', 
+                'Custom Floral Concepts'
               ].map((item) => (
                 <li key={item}>
                   <Link 
@@ -126,6 +126,9 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-sm text-center md:text-left">
             © {new Date().getFullYear()} Sandatharu Agro. All rights reserved.
+          </p>
+          <p className="text-white/40 text-sm text-center">
+            No 86, Mahaweli Breeze, Udathenna, Gurudeniya | 0772306876
           </p>
           <p className="text-white/40 text-sm text-center md:text-right">
             Crafted with ❤️ in Sri Lanka

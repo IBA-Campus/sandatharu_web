@@ -3,25 +3,26 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryItems = [
-  { id: 1, src: '/images/fresh_flowers_1.jpg', title: 'Premium Rose Collection', category: 'Fresh Flowers' },
-  { id: 2, src: '/images/wedding_decor_1.jpg', title: 'Traditional Poruwa Setup', category: 'Wedding Decor' },
-  { id: 3, src: '/images/bridal_bouquet.jpg', title: 'Bridal Bouquet Elegance', category: 'Fresh Flowers' },
-  { id: 4, src: '/images/wedding_ceremony.jpg', title: 'Garden Ceremony Arch', category: 'Wedding Decor' },
-  { id: 5, src: '/images/car_decor.jpg', title: 'Wedding Car Florals', category: 'Wedding Decor' },
-  { id: 6, src: '/images/fresh_flowers_2.jpg', title: 'Tropical Flower Market', category: 'Fresh Flowers' },
-  { id: 7, src: '/images/table_centerpiece.jpg', title: 'Reception Centerpiece', category: 'Wedding Decor' },
-  { id: 8, src: '/images/single_rose.jpg', title: 'Single Stem Perfection', category: 'Fresh Flowers' },
-  { id: 9, src: '/images/hero_farm.jpg', title: 'Our Flower Farms', category: 'Fresh Flowers' },
+  { id: 1, src: '/images/hotel_lobby.jpg', title: 'Grand Lobby Botanical Installation', category: 'Hotel Interior Decor' },
+  { id: 2, src: '/images/hotel_suite.jpg', title: 'Luxury Suite Floral Styling', category: 'Hotel Interior Decor' },
+  { id: 3, src: '/images/hotel_restaurant.jpg', title: 'Fine Dining Floral Centerpieces', category: 'Hotel Interior Decor' },
+  { id: 4, src: '/images/hotel_event.jpg', title: 'Hotel Event Grand Styling', category: 'Hotel Interior Decor' },
+  { id: 5, src: '/images/table_centerpiece.jpg', title: 'Resort Restaurant Arrangement', category: 'Hotel Interior Decor' },
+  { id: 6, src: '/images/hero_farm.jpg', title: 'Our Sustainable Flower Farm', category: 'Eco Tourism Agriculture' },
+  { id: 7, src: '/images/fresh_flowers_1.jpg', title: 'Farm-Fresh Harvest Display', category: 'Eco Tourism Agriculture' },
+  { id: 8, src: '/images/fresh_flowers_2.jpg', title: 'Eco Floral Market Showcase', category: 'Eco Tourism Agriculture' },
+  { id: 9, src: '/images/single_rose.jpg', title: 'Organic Single-Stem Cultivation', category: 'Eco Tourism Agriculture' },
+  { id: 10, src: '/images/bridal_bouquet.jpg', title: 'Sustainable Botanical Arrangement', category: 'Eco Tourism Agriculture' },
 ];
 
-const filters = ['All', 'Fresh Flowers', 'Wedding Decor'];
+const filters = ['Hotel Interior Decor', 'Eco Tourism Agriculture'];
 
 export default function Gallery() {
-  const [activeFilter, setActiveFilter] = useState('All');
+  const [activeFilter, setActiveFilter] = useState('Hotel Interior Decor');
   const [selectedItem, setSelectedItem] = useState(null);
 
   const filteredItems = galleryItems.filter(
-    (item) => activeFilter === 'All' || item.category === activeFilter
+    (item) => item.category === activeFilter
   );
 
   const openLightbox = (item) => setSelectedItem(item);
@@ -58,12 +59,12 @@ export default function Gallery() {
       <section className="bg-gradient-to-b from-emerald-deep to-emerald-forest py-20 px-6 text-center text-white">
         <h1 className="heading-serif text-5xl mb-4">Our Gallery</h1>
         <p className="text-lg max-w-2xl mx-auto text-white/90">
-          A visual journey through our finest blooms and decorations
+          Explore our portfolio of luxury hotel floral installations and eco-tourism agricultural showcases
         </p>
       </section>
 
       {/* Filter Tabs */}
-      <div className="max-w-7xl mx-auto px-6 mt-12 mb-10 flex justify-center space-x-2 md:space-x-4">
+      <div className="max-w-7xl mx-auto px-6 mt-12 mb-10 flex justify-center space-x-2 md:space-x-4 flex-wrap gap-y-2">
         {filters.map((filter) => (
           <button
             key={filter}

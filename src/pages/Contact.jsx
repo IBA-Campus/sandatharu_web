@@ -7,7 +7,6 @@ export default function Contact() {
     name: '',
     phone: '',
     service: '',
-    date: '',
     message: ''
   });
   
@@ -31,7 +30,6 @@ export default function Contact() {
           name: '',
           phone: '',
           service: '',
-          date: '',
           message: ''
         });
       }, 3000);
@@ -39,9 +37,9 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Phone, title: 'Phone', detail: '+94 77 123 4567' },
-    { icon: MapPin, title: 'Location', detail: 'Kandy & Colombo, Sri Lanka' },
-    { icon: Mail, title: 'Email', detail: 'hello@sandatharuagro.lk' },
+    { icon: Phone, title: 'Phone', detail: '+94 77 230 6876' },
+    { icon: MapPin, title: 'Location', detail: 'No 86, Mahaweli Breeze, Udathenna, Gurudeniya' },
+    { icon: Mail, title: 'Email', detail: 'sandatharuagro@gmail.com' },
     { icon: Clock, title: 'Hours', detail: 'Mon-Sat: 7:00 AM - 7:00 PM' }
   ];
 
@@ -64,7 +62,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-white/80 max-w-2xl mx-auto text-lg"
           >
-            We would love to hear from you. Reach out for fresh flowers or wedding decor inquiries.
+            We would love to hear from you. Reach out for hotel interior decor or eco-tourism agriculture inquiries.
           </motion.p>
         </div>
         
@@ -169,7 +167,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-6">
                 <div className="flex flex-col space-y-1">
                   <label htmlFor="service" className="text-sm text-gray-600 ml-1">Service Needed</label>
                   <select 
@@ -180,22 +178,10 @@ export default function Contact() {
                     className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-emerald-forest focus:ring-1 focus:ring-emerald-forest transition-colors"
                   >
                     <option value="" disabled>Select a Service</option>
-                    <option value="Fresh Flowers">Fresh Flowers</option>
-                    <option value="Wedding Decor">Wedding Decor</option>
+                    <option value="Hotel Interior Decor">Hotel Interior Decor</option>
+                    <option value="Eco Tourism Agriculture">Eco Tourism Agriculture</option>
                     <option value="Both">Both</option>
                   </select>
-                </div>
-
-                <div className="flex flex-col space-y-1">
-                  <label htmlFor="date" className="text-sm text-gray-600 ml-1">Event Date (if applicable)</label>
-                  <input 
-                    type="date" 
-                    id="date" 
-                    name="date"
-                    value={formData.date}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-emerald-forest focus:ring-1 focus:ring-emerald-forest transition-colors"
-                  />
                 </div>
               </div>
 
@@ -255,7 +241,7 @@ export default function Contact() {
       <div className="fixed bottom-6 right-6 z-40 group">
         <div className="absolute inset-0 bg-[#25D366] rounded-full animate-pulse-ring opacity-50 pointer-events-none"></div>
         <a 
-          href="https://wa.me/94771234567" 
+          href="https://wa.me/94772306876" 
           target="_blank" 
           rel="noopener noreferrer"
           className="relative flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300 z-10"

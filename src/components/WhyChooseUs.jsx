@@ -1,27 +1,27 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Leaf, Palette, Sprout, Clock } from 'lucide-react';
+import { Leaf, Building, Sun, Palette } from 'lucide-react';
 
 const features = [
   {
     icon: Leaf,
-    title: "Freshness Guaranteed",
-    desc: "Flowers harvested at dawn and delivered within hours to ensure maximum freshness and longevity."
+    title: "Eco-Friendly Practices",
+    desc: "Every flower is sustainably cultivated using organic farming methods, reducing our environmental footprint while delivering nature's finest."
+  },
+  {
+    icon: Building,
+    title: "Hotel Aesthetic Upgrades",
+    desc: "We transform hospitality spaces into botanical masterpieces, elevating guest experiences with curated fresh floral installations."
+  },
+  {
+    icon: Sun,
+    title: "Fresh Harvest Daily",
+    desc: "Flowers are harvested at dawn from our own farms and delivered within hours, ensuring maximum freshness and longevity in every arrangement."
   },
   {
     icon: Palette,
-    title: "Custom Designs",
-    desc: "Every arrangement is crafted to match your vision, from traditional poruwa to modern wedding aesthetics."
-  },
-  {
-    icon: Sprout,
-    title: "Eco-Friendly Sourcing",
-    desc: "Sustainably grown on our organic farms with environmentally responsible practices throughout."
-  },
-  {
-    icon: Clock,
-    title: "On-Time Delivery",
-    desc: "Reliable delivery across Kandy, Colombo, and island-wide with careful handling for every order."
+    title: "Customized Concepts",
+    desc: "Every project receives a bespoke design concept tailored to your brand identity, space dimensions, and seasonal availability."
   }
 ];
 

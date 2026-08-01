@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, Menu, X } from 'lucide-react';
+import { Send, Menu, X } from 'lucide-react';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -114,8 +114,8 @@ const Navbar = () => {
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
               <Link to="/contact" className="btn-gold inline-flex items-center gap-2 text-sm lg:text-base px-6 py-2.5 rounded-full font-medium transition-all hover:scale-105">
-                <Heart size={18} className="text-emerald-deep" />
-                Book Wedding Decor
+                <Send size={18} className="text-emerald-deep" />
+                Inquire Now
               </Link>
             </div>
 
@@ -177,8 +177,8 @@ const Navbar = () => {
                 to="/contact"
                 className="btn-gold flex items-center justify-center gap-2 w-full py-3 rounded-full font-medium"
               >
-                <Heart size={18} className="text-emerald-deep" />
-                Book Wedding Decor
+                <Send size={18} className="text-emerald-deep" />
+                Inquire Now
               </Link>
             </motion.div>
           </motion.div>

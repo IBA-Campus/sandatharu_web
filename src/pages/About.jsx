@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Heart, Flower2, Sprout, Award, Leaf, Sparkles } from 'lucide-react';
+import { Building, Flower2, Sprout, Award, Leaf, Sparkles } from 'lucide-react';
 
 const Counter = ({ target, suffix, label, icon: Icon }) => {
   const [count, setCount] = useState(0);
@@ -46,17 +46,17 @@ const About = () => {
     {
       icon: Award,
       title: 'Uncompromising Quality',
-      desc: 'Every flower is hand-selected and every arrangement is quality-checked to meet our exacting standards before it reaches you.'
+      desc: 'Every floral installation undergoes rigorous quality checks. We use only the freshest, hand-selected blooms to ensure lasting beauty in every space we style.'
     },
     {
       icon: Leaf,
-      title: 'Farm-Fresh Always',
-      desc: 'Our direct farm-to-door model eliminates middlemen, ensuring you receive the freshest blooms harvested just hours before delivery.'
+      title: 'Sustainability First',
+      desc: 'From our organic farms to biodegradable packaging, every step of our process is designed to minimize environmental impact and promote ecological balance.'
     },
     {
       icon: Sparkles,
-      title: 'Artistic Elegance',
-      desc: 'Our team of skilled floral designers blend traditional Sri Lankan artistry with contemporary design trends for stunning results.'
+      title: 'Luxury Aesthetic',
+      desc: 'We blend contemporary international design trends with Sri Lanka\'s rich botanical heritage to create installations that feel both globally refined and locally authentic.'
     }
   ];
 
@@ -73,7 +73,7 @@ const About = () => {
             Our Story
           </h1>
           <p className="text-white/90 text-xl md:text-2xl font-light">
-            Where Sustainable Agriculture Meets Floral Artistry
+            Where Eco-Tourism Agriculture Meets Luxury Hotel Floral Styling
           </p>
         </motion.div>
       </section>
@@ -88,8 +88,8 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
-              src="/images/hero_farm.jpg"
-              alt="Our Farm"
+              src="/images/hotel_lobby.jpg"
+              alt="Hotel Lobby Styling"
               className="absolute w-4/5 h-4/5 object-cover rounded-2xl -rotate-2 shadow-lg z-10 top-0 left-0"
             />
             <motion.img
@@ -97,8 +97,8 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              src="/images/fresh_flowers_1.jpg"
-              alt="Fresh Flowers"
+              src="/images/hero_farm.jpg"
+              alt="Our Farm"
               className="absolute w-3/5 h-3/5 object-cover rounded-2xl rotate-2 shadow-2xl z-20 bottom-0 right-0 border-4 border-white"
             />
           </div>
@@ -112,7 +112,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="heading-serif text-3xl md:text-4xl text-emerald-deep"
             >
-              Rooted in Nature, Blooming with Passion
+              Crafting Botanical Elegance for Hospitality & Nature
             </motion.h2>
             
             <motion.p
@@ -122,7 +122,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-gray-600 leading-relaxed"
             >
-              Sandatharu Agro was born from a deep love for Sri Lanka's rich botanical heritage. Nestled in the lush highlands of Kandy, our journey began with a simple mission — to bring the freshest, most beautiful flowers directly from our farms to your doorstep.
+              Sandatharu Agro was born from a vision to bridge two beautiful worlds — the refined elegance of luxury hospitality and the raw, sustainable beauty of eco-tourism agriculture. Based in the serene landscapes near Kandy, we cultivate premium flowers using organic farming practices.
             </motion.p>
             
             <motion.p
@@ -132,7 +132,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-gray-600 leading-relaxed"
             >
-              Today, we've grown into a trusted name for premium fresh flowers and bespoke wedding decorations. Every bloom we grow is nurtured with organic practices, and every arrangement is crafted with artistic precision and heartfelt care.
+              Our team of skilled botanical designers work closely with hotels, resorts, and eco-tourism ventures to create stunning fresh floral installations that elevate guest experiences while championing environmental sustainability.
             </motion.p>
             
             <motion.p
@@ -142,7 +142,7 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-gray-600 leading-relaxed font-medium"
             >
-              From intimate celebrations to grand wedding venues, Sandatharu Agro transforms your special moments into unforgettable floral experiences.
+              From transforming five-star hotel lobbies with breathtaking botanical arrangements to showcasing sustainable agriculture through immersive farm-tour experiences, Sandatharu Agro is redefining how nature meets luxury.
             </motion.p>
           </div>
         </div>
@@ -151,9 +151,9 @@ const About = () => {
       {/* Section 3: Animated Counters */}
       <section className="w-full py-20 bg-emerald-deep px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-          <Counter target={500} suffix="+" label="Weddings Decorated" icon={Heart} />
-          <Counter target={10000} suffix="+" label="Fresh Flowers Delivered" icon={Flower2} />
-          <Counter target={100} suffix="%" label="Organic Farms" icon={Sprout} />
+          <Counter target={50} suffix="+" label="Luxury Hotels Styled" icon={Building} />
+          <Counter target={1000} suffix="+" label="Fresh Harvests Delivered" icon={Flower2} />
+          <Counter target={100} suffix="%" label="Eco-Friendly Agriculture" icon={Sprout} />
         </div>
       </section>
 

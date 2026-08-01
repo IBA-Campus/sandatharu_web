@@ -100,7 +100,7 @@ const Preloader = ({ onComplete }) => {
               transition={{ duration: 0.8, delay: 1.5 }}
               className="text-amber-warm/80 tracking-widest text-sm uppercase font-sans font-medium"
             >
-              Fresh Blooms & Floral Artistry
+              Eco-Luxury Botanical Styling
             </motion.p>
           </div>
         </motion.div>

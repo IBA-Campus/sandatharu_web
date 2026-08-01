@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Flower2, Heart, ArrowRight } from 'lucide-react';
+import { Building, Sprout, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const TiltCard = ({ children, className }) => {
@@ -59,7 +59,7 @@ const Services = () => {
             transition={{ duration: 0.6 }}
             className="heading-serif text-4xl md:text-5xl text-emerald-deep mb-4"
           >
-            Our Premium Services
+            Our Core Services
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -73,7 +73,7 @@ const Services = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-gray-600 text-lg max-w-2xl mx-auto"
           >
-            From farm-fresh blooms to breathtaking wedding decorations
+            Blending luxury hospitality aesthetics with sustainable agricultural practices
           </motion.p>
         </div>
 
@@ -86,25 +86,25 @@ const Services = () => {
           >
             <TiltCard className="h-full bg-white rounded-2xl shadow-glass-lg flex flex-col overflow-hidden cursor-pointer">
               <div className="h-64 overflow-hidden">
-                <img src="/images/fresh_flowers_1.jpg" alt="Fresh Flowers" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/images/hotel_lobby.jpg" alt="Hotel Interior Decor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-8 flex-grow flex flex-col">
                 <div className="w-12 h-12 bg-amber-warm/10 rounded-full flex items-center justify-center mb-6">
-                  <Flower2 className="text-amber-warm w-6 h-6" />
+                  <Building className="text-amber-warm w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-emerald-deep mb-4 font-serif">Fresh Flower Sales</h3>
+                <h3 className="text-2xl font-bold text-emerald-deep mb-4 font-serif">Hotel Interior Decor</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
-                  Direct farm-to-door fresh cut flowers, hand-tied bouquets, corporate arrangements, and wholesale supplies. Every stem is harvested at peak freshness from our own organic farms.
+                  Transforming hotel lobbies, luxury suites, fine dining restaurants, and resort spaces with fresh cut flower styling and natural botanical arrangements that captivate every guest.
                 </p>
                 <div className="flex flex-wrap items-center gap-2 md:gap-4 text-sm font-medium text-emerald-forest mb-8">
-                  <span>Daily Harvest</span>
+                  <span>Lobby Styling</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-warm hidden sm:block" />
-                  <span>Same-Day Delivery</span>
+                  <span>Suite Decor</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-warm hidden sm:block" />
-                  <span>Wholesale Available</span>
+                  <span>Restaurant Florals</span>
                 </div>
-                <Link to="/flowers" className="inline-flex items-center gap-2 text-emerald-forest font-semibold hover:text-emerald-deep transition-colors mt-auto">
-                  Explore Flowers <ArrowRight size={18} />
+                <Link to="/contact" className="inline-flex items-center gap-2 text-emerald-forest font-semibold hover:text-emerald-deep transition-colors mt-auto">
+                  Explore Our Work <ArrowRight size={18} />
                 </Link>
               </div>
             </TiltCard>
@@ -118,25 +118,25 @@ const Services = () => {
           >
             <TiltCard className="h-full bg-white rounded-2xl shadow-glass-lg flex flex-col overflow-hidden cursor-pointer">
               <div className="h-64 overflow-hidden">
-                <img src="/images/wedding_decor_1.jpg" alt="Wedding Decor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/images/hero_farm.jpg" alt="Eco Tourism Agriculture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-8 flex-grow flex flex-col">
-                <div className="w-12 h-12 bg-rose-floral/10 rounded-full flex items-center justify-center mb-6">
-                  <Heart className="text-rose-floral w-6 h-6" />
+                <div className="w-12 h-12 bg-emerald-forest/10 rounded-full flex items-center justify-center mb-6">
+                  <Sprout className="text-emerald-forest w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold text-emerald-deep mb-4 font-serif">Wedding & Event Decor</h3>
+                <h3 className="text-2xl font-bold text-emerald-deep mb-4 font-serif">Eco Tourism Agriculture</h3>
                 <p className="text-gray-600 mb-6 flex-grow">
-                  Custom floral stage setups, traditional poruwa decorations, bridal car decors, settiya arrangements, and complete venue transformations for your most memorable celebrations.
+                  Promoting eco-friendly agro-tourism experiences with fresh harvest floral displays, sustainable flower cultivation tours, and farm-fresh botanical arrangements for eco-conscious visitors.
                 </p>
                 <div className="flex flex-wrap items-center gap-2 md:gap-4 text-sm font-medium text-emerald-forest mb-8">
-                  <span>Custom Designs</span>
+                  <span>Farm Tours</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-warm hidden sm:block" />
-                  <span>Full Venue Setup</span>
+                  <span>Fresh Harvest</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-warm hidden sm:block" />
-                  <span>Traditional & Modern</span>
+                  <span>Sustainable Practices</span>
                 </div>
-                <Link to="/weddings" className="inline-flex items-center gap-2 text-emerald-forest font-semibold hover:text-emerald-deep transition-colors mt-auto">
-                  Plan Your Event <ArrowRight size={18} />
+                <Link to="/contact" className="inline-flex items-center gap-2 text-emerald-forest font-semibold hover:text-emerald-deep transition-colors mt-auto">
+                  Learn More <ArrowRight size={18} />
                 </Link>
               </div>
             </TiltCard>

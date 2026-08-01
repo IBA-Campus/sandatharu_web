@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flower2, ChevronDown } from 'lucide-react';
+import { Building, Sprout, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Leaf = ({ className, delay }) => (
   <motion.svg
@@ -32,7 +33,7 @@ const Hero = () => {
       {/* Background Image & Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center opacity-30"
-        style={{ backgroundImage: "url('/images/hero_farm.jpg')" }}
+        style={{ backgroundImage: "url('/images/hotel_lobby.jpg')" }}
       />
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-emerald-deep/80 to-emerald-deep/40" />
 
@@ -50,9 +51,10 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
-        
+
+
         <div className="mb-6 space-y-2">
-          {["Fresh Blooms &", "Magical Floral Decors", "for Your Special Days"].map((line, index) => (
+          {["Elevating Hotel Spaces &", "Eco-Tourism Agriculture", "with Fresh Floral Art"].map((line, index) => (
             <div key={index} className="overflow-hidden">
               <motion.h1
                 initial={{ opacity: 0, y: 30 }}
@@ -72,7 +74,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="max-w-2xl text-lg md:text-xl text-white/80 mb-10"
         >
-          Premium farm-fresh flowers and bespoke wedding decorations, delivered with love across Sri Lanka.
+          Transforming luxury hospitality interiors and promoting sustainable agro-tourism through the art of fresh botanical styling.
         </motion.p>
 
         <motion.div
@@ -81,13 +83,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 1 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <button className="btn-gold px-8 py-3 rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
-            <Flower2 size={20} />
-            Explore Fresh Cut Flowers
-          </button>
-          <button className="btn-outline-green border-white text-white hover:bg-white/10 px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors duration-300">
-            Wedding Decor Services
-          </button>
+          <Link to="/contact" className="btn-gold px-8 py-3 rounded-full flex items-center justify-center gap-2 hover:scale-105 transition-transform duration-300">
+            <Building size={20} />
+            Hotel Interior Decor
+          </Link>
+          <Link to="/contact" className="btn-outline-green border-white text-white hover:bg-white/10 px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors duration-300">
+            <Sprout size={20} />
+            Eco Tourism Agriculture
+          </Link>
         </motion.div>
       </div>
 
