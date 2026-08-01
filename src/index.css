@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   Sandatharu Agro — Global Styles
+   ============================================ */
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+    background-color: #FAFAFA;
+    color: #1a1a1a;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(229, 169, 60, 0.25);
+    color: #0F382C;
+  }
+}
+
+@layer components {
+  /* Glassmorphism base */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .glass-dark {
+    background: rgba(15, 56, 44, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Organic glowing blobs */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .blob-green {
+    background: radial-gradient(circle, #165B4C 0%, transparent 70%);
+  }
+
+  .blob-gold {
+    background: radial-gradient(circle, #E5A93C 0%, transparent 70%);
+  }
+
+  .blob-rose {
+    background: radial-gradient(circle, #E88D9B 0%, transparent 70%);
+  }
+
+  /* Section wrapper */
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16;
+  }
+
+  /* Heading styles */
+  .heading-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  /* Gold glow button */
+  .btn-gold {
+    @apply relative inline-flex items-center justify-center px-8 py-3.5 font-semibold text-emerald-deep bg-amber-warm rounded-full transition-all duration-300 overflow-hidden;
+  }
+
+  .btn-gold:hover {
+    @apply shadow-glow-gold transform scale-105;
+  }
+
+  .btn-gold::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full;
+    animation: none;
+    transition: transform 0.6s ease;
+  }
+
+  .btn-gold:hover::before {
+    transform: translateX(100%);
+  }
+
+  /* Outline green button */
+  .btn-outline-green {
+    @apply inline-flex items-center justify-center px-8 py-3.5 font-semibold text-emerald-forest border-2 border-emerald-forest rounded-full transition-all duration-300;
+  }
+
+  .btn-outline-green:hover {
+    @apply bg-emerald-forest text-white shadow-glow-green transform scale-105;
+  }
+
+  /* Tilt card effect */
+  .tilt-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  /* Floating label input */
+  .float-input-group {
+    @apply relative;
+  }
+
+  .float-input-group input,
+  .float-input-group textarea,
+  .float-input-group select {
+    @apply w-full px-4 py-3.5 bg-white border border-gray-200 rounded-xl text-gray-800 transition-all duration-300 outline-none;
+  }
+
+  .float-input-group input:focus,
+  .float-input-group textarea:focus,
+  .float-input-group select:focus {
+    @apply border-emerald-forest ring-2 ring-emerald-forest/10;
+  }
+
+  .float-input-group label {
+    @apply absolute left-4 top-3.5 text-gray-400 transition-all duration-300 pointer-events-none;
+  }
+
+  .float-input-group input:focus ~ label,
+  .float-input-group input:not(:placeholder-shown) ~ label,
+  .float-input-group textarea:focus ~ label,
+  .float-input-group textarea:not(:placeholder-shown) ~ label {
+    @apply -top-2.5 left-3 text-xs text-emerald-forest bg-white px-1.5 font-medium;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(22, 91, 76, 0.3);
+    border-radius: 20px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(22, 91, 76, 0.5);
+  }
+
+  /* Masonry grid */
+  .masonry-grid {
+    column-count: 3;
+    column-gap: 1rem;
+  }
+
+  @media (max-width: 1024px) {
+    .masonry-grid {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .masonry-grid {
+      column-count: 1;
+    }
+  }
+
+  .masonry-grid > * {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+  }
+}
