@@ -88,7 +88,7 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8 }}
-              src="/images/hotel_lobby.jpg"
+              src="/Flower/3.jpeg"
               alt="Hotel Lobby Styling"
               className="absolute w-4/5 h-4/5 object-cover rounded-2xl -rotate-2 shadow-lg z-10 top-0 left-0"
             />
@@ -97,7 +97,7 @@ const About = () => {
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              src="/images/hero_farm.jpg"
+              src="/kothmale/2.jpeg"
               alt="Our Farm"
               className="absolute w-3/5 h-3/5 object-cover rounded-2xl rotate-2 shadow-2xl z-20 bottom-0 right-0 border-4 border-white"
             />

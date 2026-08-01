@@ -3,16 +3,30 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const galleryItems = [
-  { id: 1, src: '/images/hotel_lobby.jpg', title: 'Grand Lobby Botanical Installation', category: 'Hotel Interior Decor' },
-  { id: 2, src: '/images/hotel_suite.jpg', title: 'Luxury Suite Floral Styling', category: 'Hotel Interior Decor' },
-  { id: 3, src: '/images/hotel_restaurant.jpg', title: 'Fine Dining Floral Centerpieces', category: 'Hotel Interior Decor' },
-  { id: 4, src: '/images/hotel_event.jpg', title: 'Hotel Event Grand Styling', category: 'Hotel Interior Decor' },
-  { id: 5, src: '/images/table_centerpiece.jpg', title: 'Resort Restaurant Arrangement', category: 'Hotel Interior Decor' },
-  { id: 6, src: '/images/hero_farm.jpg', title: 'Our Sustainable Flower Farm', category: 'Eco Tourism Agriculture' },
-  { id: 7, src: '/images/fresh_flowers_1.jpg', title: 'Farm-Fresh Harvest Display', category: 'Eco Tourism Agriculture' },
-  { id: 8, src: '/images/fresh_flowers_2.jpg', title: 'Eco Floral Market Showcase', category: 'Eco Tourism Agriculture' },
-  { id: 9, src: '/images/single_rose.jpg', title: 'Organic Single-Stem Cultivation', category: 'Eco Tourism Agriculture' },
-  { id: 10, src: '/images/bridal_bouquet.jpg', title: 'Sustainable Botanical Arrangement', category: 'Eco Tourism Agriculture' },
+  // Hotel Interior Decor (Flower folder)
+  { id: 1, src: '/Flower/1.jpeg', title: 'Grand Hotel Lobby Arrangement', category: 'Hotel Interior Decor' },
+  { id: 2, src: '/Flower/2.jpeg', title: 'Luxury Suite Floral Styling', category: 'Hotel Interior Decor' },
+  { id: 3, src: '/Flower/3.jpeg', title: 'Resort Dining Centerpiece', category: 'Hotel Interior Decor' },
+  { id: 4, src: '/Flower/4.jpeg', title: 'Bespoke Botanical Setup', category: 'Hotel Interior Decor' },
+  { id: 5, src: '/Flower/5.jpeg', title: 'Hotel Reception Floral Concept', category: 'Hotel Interior Decor' },
+  { id: 6, src: '/Flower/6.jpeg', title: 'Villa & Resort Floral Decor', category: 'Hotel Interior Decor' },
+  { id: 7, src: '/Flower/7.jpeg', title: 'Fresh Flower Stage Arrangement', category: 'Hotel Interior Decor' },
+  { id: 8, src: '/Flower/8.jpeg', title: 'Luxury Hotel Event Decor', category: 'Hotel Interior Decor' },
+  { id: 9, src: '/Flower/9.jpeg', title: 'Boutique Hotel Floral Design', category: 'Hotel Interior Decor' },
+  { id: 10, src: '/Flower/10.jpeg', title: 'Executive Lounge Floral Accent', category: 'Hotel Interior Decor' },
+
+  // Eco Tourism Agriculture (kothmale folder)
+  { id: 11, src: '/kothmale/1.jpeg', title: 'Kotmale Agro-Tourism Farm View', category: 'Eco Tourism Agriculture' },
+  { id: 12, src: '/kothmale/2.jpeg', title: 'Fresh Harvest Flower Cultivation', category: 'Eco Tourism Agriculture' },
+  { id: 13, src: '/kothmale/3.jpeg', title: 'Sustainable Organic Farm Trail', category: 'Eco Tourism Agriculture' },
+  { id: 14, src: '/kothmale/4.jpeg', title: 'Kotmale Botanical Eco-Tour', category: 'Eco Tourism Agriculture' },
+  { id: 15, src: '/kothmale/5.jpeg', title: 'Farm-Fresh Floral Display', category: 'Eco Tourism Agriculture' },
+  { id: 16, src: '/kothmale/6.jpeg', title: 'Eco Agro-Tourism Landscape', category: 'Eco Tourism Agriculture' },
+  { id: 17, src: '/kothmale/7.jpeg', title: 'Nature Harvest & Cultivation', category: 'Eco Tourism Agriculture' },
+  { id: 18, src: '/kothmale/8.jpeg', title: 'Organic Flower Farming Showcase', category: 'Eco Tourism Agriculture' },
+  { id: 19, src: '/kothmale/9.jpeg', title: 'Botanical Garden Eco Experience', category: 'Eco Tourism Agriculture' },
+  { id: 20, src: '/kothmale/10.jpeg', title: 'Kotmale Mountain Agriculture View', category: 'Eco Tourism Agriculture' },
+  { id: 21, src: '/kothmale/11.jpeg', title: 'Fresh Harvest Eco Showcase', category: 'Eco Tourism Agriculture' },
 ];
 
 const filters = ['Hotel Interior Decor', 'Eco Tourism Agriculture'];

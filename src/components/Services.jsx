@@ -86,7 +86,7 @@ const Services = () => {
           >
             <TiltCard className="h-full bg-white rounded-2xl shadow-glass-lg flex flex-col overflow-hidden cursor-pointer">
               <div className="h-64 overflow-hidden">
-                <img src="/images/hotel_lobby.jpg" alt="Hotel Interior Decor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/Flower/2.jpeg" alt="Hotel Interior Decor" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-8 flex-grow flex flex-col">
                 <div className="w-12 h-12 bg-amber-warm/10 rounded-full flex items-center justify-center mb-6">
@@ -118,7 +118,7 @@ const Services = () => {
           >
             <TiltCard className="h-full bg-white rounded-2xl shadow-glass-lg flex flex-col overflow-hidden cursor-pointer">
               <div className="h-64 overflow-hidden">
-                <img src="/images/hero_farm.jpg" alt="Eco Tourism Agriculture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/kothmale/1.jpeg" alt="Eco Tourism Agriculture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-8 flex-grow flex flex-col">
                 <div className="w-12 h-12 bg-emerald-forest/10 rounded-full flex items-center justify-center mb-6">
